@@ -1,0 +1,200 @@
+.footer, .footer--text {
+  height: 350px;
+  background-color: #22201F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer--text {
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 0px;
+  width: 250px;
+}
+
+.w-L {
+  width: 400px;
+}
+
+.w-xL {
+  width: 550px;
+}
+
+.social, .social--buttons, .social--icon, .social--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social--buttons {
+  width: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.social--icon {
+  height: 14px;
+}
+
+.social--text {
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 400px;
+  margin-top: 10px;
+}
+
+.hero-logo {
+  height: 50%;
+}
+
+.home-intro-content-box {
+  background-color: #22201F;
+  height: 484px;
+  width: 469px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro, .intro--title, .intro--body, .intro--cta {
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+}
+
+.intro--title {
+  width: 60%;
+  font-size: 23px;
+  margin-bottom: 25px;
+  line-height: 30pt;
+}
+
+.intro--body {
+  font-weight: 200;
+  width: 75%;
+  font-size: 14px;
+  line-height: 25pt;
+}
+
+.intro--cta {
+  background-color: #D32637;
+  width: 193px;
+  height: 43px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container-background {
+  height: 780px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-repeat: no-repeat;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+.spacer-small {
+  margin-top: 25px;
+}
+
+.spacer-medium {
+  margin-top: 50px;
+}
+
+.spacer-large {
+  margin-top: 100px;
+}
+
+.spacer-xl {
+  margin-top: 150px;
+}
+
+.spacer-xxl {
+  margin-top: 200px;
+}
+/*# sourceMappingURL=main.css.map */

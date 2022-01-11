@@ -1,0 +1,47 @@
+.home-intro-content-box {
+    background-color: $grey;
+    height: 484px;
+    width: 469px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+    
+
+    &--title{
+        @extend .intro;
+        width: 60%;
+        font-size: 23px;
+        margin-bottom: 25px;
+        line-height: 30pt;
+    
+    }
+
+    &--body{
+        @extend .intro;
+        font-weight: 200;
+        width: 75%;
+        font-size: 14px;
+        line-height: 25pt;
+    }
+
+    &--cta{
+        @extend .intro;
+        background-color: $ctaRed;
+        width: 193px;
+        height:43px;
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+

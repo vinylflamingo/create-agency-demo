@@ -1,0 +1,56 @@
+.footer {
+    height: 350px;
+    background-color: $grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &--text{
+        @extend .footer;
+        font-family: 'JetBrains Mono', monospace;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height:0px;
+        width: 250px;
+    }
+
+}
+.w-L {
+    width: 400px;
+}
+.w-xL {
+    width: 550px;
+}
+
+.social {
+    display: flex;
+    &--buttons{
+        @extend .social;
+        width: 400px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+    &--icon{
+        @extend .social;
+        height: 14px;  
+    }
+
+    &--text{
+        @extend .social;
+        font-family: 'JetBrains Mono', monospace;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 400px;
+        margin-top: 10px;
+    }
+        
+}

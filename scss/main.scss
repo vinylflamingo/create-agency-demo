@@ -1,0 +1,58 @@
+// Global Items
+@import 'globals/variables';
+
+// Modules
+
+@import 'modules/footer';
+@import 'modules/hero';
+@import 'modules/homeIntro';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.container-background {
+    height: 780px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.spacer-small {
+    margin-top: 25px;
+}
+
+.spacer-medium {
+    margin-top: 50px;
+}
+
+.spacer-large {
+    margin-top: 100px;
+}
+.spacer-xl {
+    margin-top: 150px;
+}
+.spacer-xxl {
+    margin-top: 200px;
+}
+
+
+
+
