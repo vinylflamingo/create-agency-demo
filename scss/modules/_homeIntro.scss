@@ -1,11 +1,14 @@
 .home-intro-content-box {
     background-color: $grey;
-    height: 484px;
+    height: 600px;
     width: 469px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include sm {
+        width: 380px;
+    }
 }
 
 .intro {
@@ -19,6 +22,14 @@
         font-size: 23px;
         margin-bottom: 25px;
         line-height: 30pt;
+        @include sm {
+            width: 70%;
+        }
+        @include xs {
+            margin-top: 100px;
+            line-height: 20pt;
+            font-size: 20px;
+        }
     
     }
 
@@ -41,7 +52,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include xs {
+            margin-top:50px;
+        }
     }
+
+    
 
 }
 

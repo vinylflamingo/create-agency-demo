@@ -1,2 +1,15 @@
 $grey: #22201F;
 $ctaRed: #D32637;
+
+$screen-xs-min: 300px;
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;

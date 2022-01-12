@@ -1,11 +1,13 @@
 // Global Items
 @import 'globals/variables';
+@import 'globals/mixins';
 
 // Modules
 
 @import 'modules/footer';
 @import 'modules/hero';
 @import 'modules/homeIntro';
+@import 'modules/navigation';
 
 *{
     margin: 0px;
@@ -21,6 +23,8 @@ a{
 .container {
     display: flex;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-background {
@@ -33,6 +37,11 @@ a{
     object-position: center;
     object-fit: cover;
     background-size: cover;
+    &--hero{
+    @extend .container-background;
+    height: 100vh;
+
+    }
 }
 
 .spacer-small {

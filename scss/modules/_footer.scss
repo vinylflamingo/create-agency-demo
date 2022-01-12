@@ -16,6 +16,8 @@
         justify-content: space-evenly;
         height:0px;
         width: 250px;
+        max-width: 80%;
+
     }
 
 }
@@ -34,6 +36,7 @@
         align-items: center;
         justify-content: space-evenly;
         margin-top: 100px;
+        max-width: 98%;
     }
     &--icon{
         @extend .social;
@@ -51,6 +54,10 @@
         justify-content: space-evenly;
         width: 400px;
         margin-top: 10px;
+        max-width: 98%;
+        @include xs {
+            font-size: 8px;;
+        }
     }
         
 }

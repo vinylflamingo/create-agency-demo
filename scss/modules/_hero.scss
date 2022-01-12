@@ -1,4 +1,7 @@
 .hero-logo {
     height: 50%;
+    @include xs {
+        height: 40%;
+    }
 }
 
