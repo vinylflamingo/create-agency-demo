@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 .footer, .footer--text {
   height: 350px;
   background-color: #22201F;
