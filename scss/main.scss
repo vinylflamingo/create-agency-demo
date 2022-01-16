@@ -6,6 +6,7 @@
 
 @import 'modules/footer';
 @import 'modules/hero';
+@import 'modules/about';
 @import 'modules/homeIntro';
 @import 'modules/navigation';
 
@@ -14,6 +15,7 @@
     padding: 0px;
     border: none;
     color: white;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 a{
@@ -37,15 +39,35 @@ a{
     object-position: center;
     object-fit: cover;
     background-size: cover;
+    background-color: $grey;
+    background-position: center center;
     &--hero{
     @extend .container-background;
     height: 100vh;
+    }
+    &--baseline{
+        @extend .container-background;
+        flex-direction: column;
+        justify-content: start;
+        height: 600px;
+        
+    }
+    &--long-about{
+        @extend .container-background;
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        max-width: 100%;
 
     }
 }
 
 .spacer-small {
     margin-top: 25px;
+}
+
+.spacer-circle {
+    margin-top: 38px;
 }
 
 .spacer-medium {

@@ -2,20 +2,23 @@
 //////////////////////////////////////////////////////////////
 //code for intro cta on home page to flip red and flip text//
 ////////////////////////////////////////////////////////////
-var introCta = document.getElementById("intro-cta");
+if (document.getElementById("intro-cta") != null)
+{
+    var introCta = document.getElementById("intro-cta");
 
-introCta.addEventListener("mouseover", function() {
-   introCta.style.backgroundColor = "white";
-   introCta.style.color = "black";
-   introCta.style.transform = "scale(1, -1)"
-
-});
+    introCta.addEventListener("mouseover", function() {
+       introCta.style.backgroundColor = "white";
+       introCta.style.color = "black";
+       introCta.style.transform = "scale(1, -1)"
     
-introCta.addEventListener("mouseout", function() {
-    introCta.style.backgroundColor = "#D32637";
-    introCta.style.color = "white";
-    introCta.style.transform = "scale(1, 1)"
-});
+    });
+        
+    introCta.addEventListener("mouseout", function() {
+        introCta.style.backgroundColor = "#D32637";
+        introCta.style.color = "white";
+        introCta.style.transform = "scale(1, 1)"
+    });  
+}
 
 ///////////////////////////////
 //code for sticky navigation//
@@ -30,7 +33,7 @@ var removeable = document.getElementsByClassName("removeable");
 
 // Get the offset position of the navbar
 var sticky = nav.offsetTop;
-var viewport =  window.innerHeight * .85;
+var viewport =  window.innerHeight * .7;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function navScroll() {
@@ -41,8 +44,9 @@ function navScroll() {
         nav.classList.remove("sticky");
     }
 
-    if (window.pageYOffset >= viewport) {
+    if (window.scrollY >= viewport) {
         nav.classList.add("bar")
+        console.log("bar")
         for(r of removeable)
         {
             r.classList.add("active")

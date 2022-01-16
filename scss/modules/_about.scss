@@ -1,0 +1,157 @@
+.about-intro-content-box {
+    //background-color: $grey;
+    height: 169px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100pt;
+    text-align: center;
+    max-width: 80%;
+
+    @include xl {
+        font-size: 100pt;
+
+    }
+
+}
+
+.about-intro-text{
+    max-width: 100%;
+    @include sm {
+        font-size: 50pt;
+    }
+}
+
+.about{
+    max-width: inherit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.about-text{
+    line-height: 35px;
+    text-align: center;
+    max-width: 620px;
+    &--l{
+        @extend .about-text;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    &--s{
+        @extend .about-text;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 31px;
+    }
+}
+
+
+.about-logo {
+    height: 20%;
+    margin-top: 5%;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--box{
+        @extend .date;
+        background-color: $grey;
+        width: 261px;
+        height: 63px;
+    }
+
+    &--text{
+        font-size:15px;
+    }
+}
+
+.about-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    @include xs {
+        flex-direction: column
+    }
+    @include sm {
+        flex-direction: column
+    }
+    @include lg {
+        flex-direction: column;
+        margin:0;
+    }
+
+    &--photo{
+        @extend .about-item;
+        width: inherit;
+        max-width: 395px;
+        height: 20%;  
+        margin-right: 15px;
+        @include lg {
+            margin: 0;
+        }
+    }
+
+    img {
+        height: inherit;
+        max-width: 100%;
+        
+    }
+
+    &--text{
+        @extend .about-item;
+        width: inherit;
+        height: 255px;
+        font-size: 12px;
+        line-height: 32px;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-left: 15px;
+        max-width: 395px;
+    }
+}
+
+
+.flip .about-item--photo{
+    order: 2;
+    margin-right: 0px;
+    margin-left: 15px;
+    @include lg {
+        margin: 0;
+    }
+}
+
+.flip .about-item--text{
+    order: 1;
+    margin-right: 15px;
+    margin-left: 0px;
+    text-align: right;
+}
+.content-group
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: inherit;
+}
+
+.circle {
+
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: black;
+        box-shadow: 0px 40px 0px black, 0px 80px 0px black;
+}
+
+.circle-group {
+    display: flex;
+    flex-direction: column;
+}

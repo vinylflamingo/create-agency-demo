@@ -32,3 +32,9 @@
         @content;
     }
  }
+
+ @mixin xxl {
+    @media (max-width: #{$screen-xxl-min}) {
+        @content;
+    }
+ }
